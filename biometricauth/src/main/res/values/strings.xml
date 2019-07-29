@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BiometricAuth</string>
+    <string name="biometric_failed">Fingerprint not recognized</string>
+    <string name="fingerprint_not_recognized">Fingerprint not recognized. Try again</string>
+    <string name="fingerprint_success">Fingerprint recognized</string>
+    <string name="fingerprint_hint">Touch sensor</string>
+</resources>

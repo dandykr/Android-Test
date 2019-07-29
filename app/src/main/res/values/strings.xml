@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">CASH CARD BRI</string>
+    <string name="info_alamat">Kantor Pusat\nGedung BRI 1\nJalan Jenderal Sudirman Kav. 44–46\nJakarta 10210, Indonesia</string>
+    <string name="info_location">geo:0,0?q=-6.2169131,106.8145877(Kantor+Pusat+BRI)</string>
+    <string name="notification_channel">channel-1</string>
+    <string-array name="bank_name">
+        <item>BRI</item>
+        <item>Mandiri</item>
+        <item>BCA</item>
+    </string-array>
+    <string-array name="nominal">
+        <item>100.000</item>
+        <item>200.000</item>
+        <item>300.000</item>
+        <item>400.000</item>
+        <item>500.000</item>
+        <item>600.000</item>
+        <item>700.000</item>
+        <item>800.000</item>
+        <item>900.000</item>
+        <item>1.000.000</item>
+    </string-array>
+    <string-array name="month">
+        <item>Januari</item>
+        <item>Februari</item>
+        <item>Maret</item>
+        <item>April</item>
+        <item>Mei</item>
+        <item>Juni</item>
+        <item>Juli</item>
+        <item>Agustus</item>
+        <item>September</item>
+        <item>Oktober</item>
+        <item>November</item>
+        <item>Desember</item>
+    </string-array>
+</resources>

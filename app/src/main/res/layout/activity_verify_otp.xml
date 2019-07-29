@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/constraint_layout"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <View
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="@drawable/bg_gradient_header_flat" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/transparent"
+            android:foreground="?attr/selectableItemBackground"
+            android:src="@drawable/ic_back_left"
+            android:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/righteous_font_family"
+            android:text="Verifikasi"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingBottom="8dp">
+            <TextView
+                android:id="@+id/btn_atm_loc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:gravity="center"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="Masukkan kode verifikasi yang telah dikirimkan melalui email/sms"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <com.bri.otplayout.OTPView
+                android:id="@+id/otp_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                android:inputType="number"
+                android:textSize="25sp"
+                android:textColor="@color/grey700"
+                app:itemCount="6"
+                app:itemSpacing="6dp"
+                app:state_filled="true"
+                app:viewType="rectangle"/>
+
+            <TextView
+                android:id="@+id/btn_resend"
+                android:gravity="center_vertical"
+                android:layout_marginTop="16dp"
+                android:paddingTop="8dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackground"
+                android:paddingBottom="8dp"
+                android:textColor="@color/grey400"
+                android:drawableStart="@drawable/ic_refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kirim ulang kode verifikasi"/>
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginTop="32dp"/>
+
+            <Button
+                android:id="@+id/btn_verifikasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Verifikasi"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="8dp"
+                style="@style/ButtonGradient"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

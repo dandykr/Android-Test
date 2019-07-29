@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Saldo"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:textColor="@color/red300"/>
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/chart_saldo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/graph_height"
+                android:layout_marginTop="8dp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Debet"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:textColor="@color/blue300"/>
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/chart_debet"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/graph_height"
+                android:layout_marginTop="8dp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kredit"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:textColor="@color/orange300"/>
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/chart_kredit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/graph_height"
+                android:layout_marginTop="8dp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

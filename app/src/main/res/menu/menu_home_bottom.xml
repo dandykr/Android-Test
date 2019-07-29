@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_mutasi"
+        android:enabled="true"
+        android:icon="@drawable/ic_library_books"
+        android:title="Mutasi"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_statement"
+        android:enabled="true"
+        android:icon="@drawable/ic_poll"
+        android:title="Statement"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_transfer"
+        android:enabled="true"
+        android:title="Transfer"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_tartun"
+        android:enabled="true"
+        android:icon="@drawable/ic_indonesia_rupiah_currency_symbol"
+        android:title="Tarik Tunai"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_info"
+        android:enabled="true"
+        android:icon="@drawable/ic_info"
+        android:title="Info"
+        app:showAsAction="always"/>
+
+</menu>
